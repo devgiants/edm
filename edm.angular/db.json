@@ -1,0 +1,19 @@
+{
+  "documents": [
+    {
+      "id":1,
+      "name": "Document 1",
+      "filePath": "./documents/2017/06/document_1.pdf"
+    },
+    {
+      "id":2,
+      "name": "Document 2",
+      "filePath": "./documents/2017/06/document_2.pdf"
+    },
+    {
+      "id":3,
+      "name": "Document 3",
+      "filePath": "./documents/2017/06/document_3.pdf"
+    }
+  ]
+}
