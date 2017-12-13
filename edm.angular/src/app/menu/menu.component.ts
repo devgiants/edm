@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'edm-menu',
-  template: `
-    <p>
-      menu works!
-    </p>
-  `,
+  templateUrl: 'menu.component.html',
   styles: []
 })
 export class MenuComponent implements OnInit {

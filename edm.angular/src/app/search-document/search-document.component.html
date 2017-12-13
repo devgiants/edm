@@ -1,0 +1,11 @@
+<div class="column has-text-centered">
+    <h1>Bienvenue sur EDM</h1>
+</div>
+<div class="field">
+    <div class="control">
+        <input class="input" type="text" placeholder="Text input">
+    </div>
+</div>
+<div class="container">
+    <edm-document-list [documents]="documents$ | async" class="columns is-multiline is-mobile"></edm-document-list>
+</div>

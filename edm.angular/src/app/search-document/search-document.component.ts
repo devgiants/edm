@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import {DocumentService} from "../Service/document.service";
+import {Observable} from "rxjs/Observable";
 
 @Component({
-  selector: 'app-search-document',
-  template: `
-    <p>
-      search-document works!
-    </p>
-  `,
+  selector: 'edm-search-document',
+  templateUrl: 'search-document.component.html',
   styles: []
 })
 export class SearchDocumentComponent implements OnInit {
 
-  constructor() { }
+  documents$: Observable<Array<Document>>;
+
+  constructor(private documentService: DocumentService) {
+    this.documents$ = this.documentService.getAllDocuments();
+  }
 
   ngOnInit() {
   }
