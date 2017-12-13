@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {DocumentService} from "../Service/document.service";
-import {Observable} from "rxjs/Observable";
+import { DocumentService } from "../Service/document.service";
+import { Observable } from "rxjs/Observable";
+import { Document } from "../Interface/document";
 
 @Component({
   selector: 'edm-search-document',
