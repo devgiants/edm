@@ -4,7 +4,7 @@ import { Document } from "../Interface/document";
 @Component({
   selector: 'edm-document-list',
   templateUrl: 'document-list.component.html',
-  styles: []
+  styleUrls: ['../document/document.component.scss']
 })
 export class DocumentsListComponent implements OnInit {
 

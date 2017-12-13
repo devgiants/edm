@@ -22,8 +22,7 @@
         "../node_modules/bulma/css/bulma.css",
         "styles.css"
       ],
-      "scripts": [
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -56,14 +55,14 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "class": {
       "spec": false
     },
     "component": {
+      "spec": false,
       "inlineStyle": true,
-      "inlineTemplate": true,
-      "spec": false
+      "inlineTemplate": true
     },
     "directive": {
       "spec": false
