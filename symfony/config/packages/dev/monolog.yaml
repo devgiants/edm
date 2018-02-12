@@ -1,5 +1,5 @@
 monolog:
-    channels: ['document', 'tag', 'security', 'exception']
+    channels: ['entities', 'security', 'exception']
     handlers:
         main:
             type: stream
@@ -15,18 +15,12 @@ monolog:
         #    type: chromephp
         #    level: info
 
-        document:
+        entities:
             type: rotating_file
             level: info
-            path: "%kernel.logs_dir%/%kernel.environment%-document.log"
+            path: "%kernel.logs_dir%/%kernel.environment%-entities.log"
             max_files: 10
-            channels: document
-        tag:
-            type: rotating_file
-            level: info
-            path: "%kernel.logs_dir%/%kernel.environment%-tag.log"
-            max_files: 10
-            channels: tag
+            channels: entities
         security:
             type: rotating_file
             level: info

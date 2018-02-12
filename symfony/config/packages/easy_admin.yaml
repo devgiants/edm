@@ -1,6 +1,9 @@
 easy_admin:
-    entities:
-        # List the entity class name you want to manage
-        - App\Entity\Document
-        - App\Entity\Tag
-#        - App\Entity\User
+  entities:
+    Document:
+      class: App\Entity\Document
+      form:
+        fields:
+#          - 'id'
+          - { property: 'name', type: 'text', label: 'Nom', icon: 'user' }
+          - { property: 'file', type: 'file', label: 'Fichier', icon: 'file' }

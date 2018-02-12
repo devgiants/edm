@@ -9,7 +9,6 @@
 namespace App\Entity;
 
 
-use App\Entity\Behavior\Timestampable;
 use App\Entity\Behavior\Userable;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -20,7 +19,6 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity
  */
 class Document {
-	use Timestampable;
 	/**
 	 * @var int
 	 *
