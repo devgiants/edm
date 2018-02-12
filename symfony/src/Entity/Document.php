@@ -11,6 +11,8 @@ namespace App\Entity;
 
 use App\Entity\Behavior\Userable;
 use Doctrine\ORM\Mapping as ORM;
+use Knp\DoctrineBehaviors\Model\Blameable\Blameable;
+use Knp\DoctrineBehaviors\Model\Timestampable\Timestampable;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -19,6 +21,10 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity
  */
 class Document {
+	use Timestampable,
+		Blameable
+		;
+
 	/**
 	 * @var int
 	 *

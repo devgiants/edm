@@ -33,8 +33,8 @@ services:
 #        tags:
 #            - { name: doctrine.event_subscriber }
 
-    App\Listener\Doctrine\DoctrineSubscriber:
-        arguments:
-            $logger: '@monolog.logger.entities'
-        tags:
-            - { name: doctrine.event_subscriber }
+#    App\Listener\Doctrine\DoctrineSubscriber:
+#        arguments:
+#            $logger: '@monolog.logger.entities'
+#        tags:
+#            - { name: doctrine.event_subscriber }

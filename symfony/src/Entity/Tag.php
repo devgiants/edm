@@ -9,8 +9,9 @@
 namespace App\Entity;
 
 
-use App\Entity\Behavior\Timestampable;
 use Doctrine\ORM\Mapping as ORM;
+use Knp\DoctrineBehaviors\Model\Blameable\Blameable;
+use Knp\DoctrineBehaviors\Model\Timestampable\Timestampable;
 
 /**
  * Class Product
@@ -18,7 +19,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  */
 class Tag {
-	use Timestampable;
+	use Timestampable,
+		Blameable;
 	/**
 	 * @var int
 	 *
